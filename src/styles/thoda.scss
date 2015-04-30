@@ -5,6 +5,10 @@
     box-sizing: border-box;
  }
 
+body {
+    font-family: 'Noto Sans', sans-serif;
+}
+
 .container {
     margin: auto;
     max-width: 1280px;
@@ -95,6 +99,16 @@ a {
     .col-#{$i}-12 {
         margin-left: $i / 12 * 100%;
     }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
 }
 
 h2,
