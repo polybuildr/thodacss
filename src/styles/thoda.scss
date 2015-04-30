@@ -1,0 +1,168 @@
+//apply a natural box layout model to all elements
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+ }
+
+.container {
+    margin: auto;
+    max-width: 1280px;
+    padding: 1em;
+    width: 90%;
+}
+
+a {
+    color: #057cb8;
+    text-decoration: none;
+}
+
+.btn {
+    background-color: #eee;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    color: #111;
+    display: inline-block;
+    font-size: 16px;
+    line-height: 1.45em;
+    padding: .5em;
+    text-decoration: none;
+    transition: background-color .1s;
+
+    &:hover {
+        background-color: #ddd;
+    }
+
+    .btn-large {
+        font-size: 20px;
+    }
+
+    .btn-small {
+        font-size: 14px;
+    }
+
+    .btn-blue {
+        background-color: #1185c0;
+        border: 1px solid #1779aa;
+        color: #fff;
+    }
+
+    .btn-blue:hover {
+        background-color: #0c6fa0;
+        border: 1px solid #0d6087;
+    }
+
+    .btn-green {
+        background-color: #11bf14;
+        border: 1px solid #0ea010;
+        color: #fff;
+    }
+
+    .btn-green:hover {
+        background-color: #11a314;
+        border: 1px solid #107f12;
+    }
+}
+
+.cf:before,
+.cf:after,
+.row:before,
+.row:after,
+.navbar:before,
+.navbar:after {
+    content: ' ';
+    display: table;
+}
+
+.cf:after,
+.row:after,
+.navbar:after {
+    clear: both;
+}
+
+[class*=col-] {
+    border: 1px solid #ccc;
+    float: left;
+}
+
+@for $i from 1 through 12 {
+    .col-#{$i}-12 {
+        width: $i / 12 * 100%;
+    }
+}
+
+@for $i from 1 through 12 {
+    .col-#{$i}-12 {
+        margin-left: $i / 12 * 100%;
+    }
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: .4em 0 .5em;
+}
+
+.page-title {
+    font-size: 60px;
+    margin: .3em 0 .5em;
+    text-align: center;
+}
+
+h2 {
+    color: #333;
+    font-size: 2em;
+}
+
+h3 {
+    color: #555;
+    font-size: 1.6em;
+}
+
+.well,
+.modal {
+    background-color: #eee;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    color: #111;
+    padding: .7em;
+}
+
+.navbar {
+    background-color: #eee;
+    padding: .5em;
+
+    ul {
+        float: right;
+        list-style: none;
+        margin: 0;
+    }
+
+    li {
+        display: inline-block;
+        margin: auto .3em;
+
+        a:hover {
+            background-color: #359bce;
+            border-radius: 2px;
+            color: #fff;
+        }
+    }
+
+    a,
+    .navbar-title {
+        display: inline-block;
+        padding: .35em .5em;
+    }
+
+    .navbar-title {
+        color: #444;
+        font-weight: bold;
+    }
+
+    .navbar-title:hover {
+        color: #111;
+    }
+}

@@ -1,0 +1,5 @@
+linters:
+    BorderZero:
+        enabled: false
+    Indentation:
+        width: 4
