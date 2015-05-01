@@ -1,0 +1,60 @@
+.btn {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 1px;
+    color: lighten($body-text-color, 25%);
+    display: inline-block;
+    font-size: .8em;
+    height: auto;
+    letter-spacing: 1px;
+    margin: 0;
+    outline: 0;
+    padding: .65em 1.35em;
+    text-transform: uppercase;
+    transition: .2s all;
+
+    &:hover {
+        background-color: $body-text-color;
+        border-color: $body-text-color;
+        color: invert($body-text-color);
+        transition: .2s all;
+    }
+
+    &.btn-large {
+        font-size: 1.1em;
+    }
+
+    &.btn-small {
+        font-size: .65em;
+    }
+
+    &.btn-green {
+        border: 1px solid #189d12;
+        color: #189d12;
+
+        &:hover {
+            background-color: #189d12;
+            color: #fff;
+        }
+    }
+
+    &.btn-blue {
+        border: 1px solid #0b8ac0;
+        color: #0b8ac0;
+
+        &:hover {
+            background-color: #0b8ac0;
+            color: #fff;
+        }
+    }
+
+    &.btn-red {
+        border: 1px solid #e00;
+        color: #e00;
+
+        &:hover {
+            background-color: #e00;
+            color: #fff;
+        }
+    }
+}

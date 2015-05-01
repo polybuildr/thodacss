@@ -1,0 +1,33 @@
+.row:before,
+.row:after {
+    content: ' ';
+    display: table;
+}
+
+.row:after {
+    clear: both;
+}
+
+[class*=col-] {
+    float: left;
+}
+
+@for $i from 1 through 12 {
+    .col-#{$i}-12 {
+        width: $i / 12 * 100%;
+    }
+}
+
+@for $i from 1 through 12 {
+    .col-offset-#{$i}-12 {
+        margin-left: $i / 12 * 100%;
+    }
+}
+
+@media (max-width: 700px) {
+    [class*=col-] {
+        float: none;
+        width: 100%;
+        margin-left: 0;
+    }
+}

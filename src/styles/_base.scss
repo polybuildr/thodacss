@@ -1,0 +1,75 @@
+//apply a natural box layout model to all elements
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+ }
+
+body {
+    color: $body-text-color;
+    font-family: $body-font-family;
+    font-size: $body-font-size;
+}
+
+p {
+    line-height: 1.45em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: $headings-font-family;
+    font-weight: $headings-font-weight;
+    margin: .3em 0;
+    padding-bottom: .2em;
+}
+
+h1 {
+    font-size: 3em;
+    margin: .2em 0;
+}
+
+h2 {
+    color: #222;
+    font-size: 2em;
+}
+
+h3 {
+    color: #222;
+    font-size: 1.6em;
+}
+
+h4 {
+    font-size: 1.4em;
+}
+
+h5 {
+    font-size: 1.3em;
+}
+
+h6 {
+    font-size: 1.2em;
+}
+
+h4,
+h5,
+h6 {
+    color: #333;
+}
+
+p {
+    margin: .1em 0 1em;
+    padding: 0;
+}
+
+a {
+    color: #0e7a82;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #0390c8;
+}

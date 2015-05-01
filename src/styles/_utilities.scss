@@ -1,0 +1,55 @@
+.cf:before,
+.cf:after {
+    content: ' ';
+    display: table;
+}
+
+.cf:after {
+    clear: both;
+}
+
+.well {
+    background-color: #eee;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    color: #111;
+    padding: .7em;
+}
+
+.pull-left {
+    float: left;
+}
+
+.pull-right {
+    float: right;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-justified {
+    text-align: justify;
+}
+
+.padded {
+    padding: 1em;
+}
+
+.padded-vertical {
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+.padded-horizontal {
+    padding-left: 1em;
+    padding-right: 1em;
+}

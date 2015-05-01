@@ -1,0 +1,36 @@
+.navbar {
+    background-color: #eee;
+    padding: .5em;
+
+    ul {
+        float: right;
+        list-style: none;
+        margin: 0;
+    }
+
+    li {
+        display: inline-block;
+        margin: auto .3em;
+
+        a:hover {
+            background-color: #359bce;
+            border-radius: 2px;
+            color: #fff;
+        }
+    }
+
+    a,
+    .navbar-title {
+        display: inline-block;
+        padding: .35em .5em;
+    }
+
+    .navbar-title {
+        color: #444;
+        font-weight: bold;
+    }
+
+    .navbar-title:hover {
+        color: #111;
+    }
+}
