@@ -1,2 +1,8 @@
-node_modules
-dist
+#editor generated files
+*.swp
+
+#node
+/node_modules/
+
+#build output directory
+/dist/
