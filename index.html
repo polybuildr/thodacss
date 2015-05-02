@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Thoda CSS</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="http://fonts.googleapis.com/css?family=Noto+Sans:400,700,400italic|Lato" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/thoda.css">
+        <style>
+        #grid .row {
+            margin: 1em 0;
+        }
+
+        #grid [class*=col-] {
+            background-color: #eee;
+            border: 1px solid #ccc;
+            padding: 1em;
+            transition: .1s all;
+        }
+
+        #grid [class*=col-]:hover {
+            background-color: #ddd;
+            transition: .1s all;
+        }
+
+        .container > div > h2 {
+            border-bottom: 1px solid #ccc;
+        }
+        #buttons .btn {
+            margin: .3em;
+        }
+        </style>
+    </head>
+    <body>
+        <div class="navbar">
+            <a class="navbar-title" href="#">ThodaCSS</a>
+            <ul class="pull-right">
+                <li><a href="#">Link</a></li>
+                <li><a href="#">Link</a></li>
+                <li><a href="#">Link</a></li>
+            </ul>
+        </div>
+        <div class="hero">
+            <div class="hero-content">
+                <h1>ThodaCSS</h1>
+                <p class="tagline">A minimal CSS framework.</p>
+                <a class="btn btn-large" href="#typography">Learn more</a>
+            </div>
+        </div>
+        <div class="container">
+            <div id="typography">
+                <h2>Typography</h2>
+                <div>
+                    <h1>Heading 1</h1>
+                    <h2>Heading 2</h2>
+                    <h3>Heading 3</h3>
+                    <h4>Heading 4</h4>
+                    <h5>Heading 5</h5>
+                    <h6>Heading 6</h6>
+
+                    <h1>Heading 1</h1>
+                    <p>Sed non leo metus. Nam varius tincidunt fringilla. Donec orci ante, fringilla a malesuada blandit, convallis et dui.</p>
+
+                    <h2>Heading 2</h2>
+                    <p><a href="http://www.lipsum.com/" target="_blank">Lorem ipsum</a> dolor sit amet, consectetur adipiscing elit. Ut pulvinar purus justo, eu sagittis quam condimentum in. Sed non leo metus. Nam varius tincidunt fringilla. Donec orci ante, fringilla a malesuada blandit, convallis et dui. Pellentesque euismod tristique libero posuere finibus. Integer quis magna nec enim commodo sollicitudin. Mauris vel magna sem. Morbi dapibus fringilla congue. Ut sagittis mauris ut vestibulum semper. Aliquam tristique urna tempus finibus volutpat. Fusce quis tincidunt mauris. Mauris in lectus ut eros accumsan dignissim. Quisque eget fringilla massa, quis egestas leo. Cras sit amet tincidunt mi. Nulla ut nulla pulvinar mi ultrices laoreet.</p>
+
+                    <p>Sed non leo metus. Nam varius tincidunt fringilla. Donec orci ante, fringilla a malesuada blandit, convallis et dui. Pellentesque euismod tristique libero posuere finibus. Integer quis magna nec enim commodo sollicitudin. Mauris vel magna sem. Morbi dapibus fringilla congue. Ut sagittis mauris ut vestibulum semper. Aliquam tristique urna tempus finibus volutpat. Fusce quis tincidunt mauris. Mauris in lectus ut eros accumsan dignissim. Quisque eget fringilla massa, quis egestas leo. Cras sit amet tincidunt mi. Nulla ut nulla pulvinar mi ultrices laoreet.</p>
+
+
+                    <h3>Heading 3</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pulvinar purus justo, eu sagittis quam condimentum in. Sed non leo metus. Nam varius tincidunt fringilla. Donec orci ante, fringilla a malesuada blandit, convallis et dui. Pellentesque euismod tristique libero posuere finibus. Integer quis magna nec enim commodo sollicitudin. Mauris vel magna sem.</p>
+
+                    <h4>Heading 4</h4>
+                    <p> Morbi dapibus fringilla congue. Ut sagittis mauris ut vestibulum semper. Aliquam tristique urna tempus finibus volutpat. Fusce quis tincidunt mauris. Mauris in lectus ut eros accumsan dignissim. Quisque eget fringilla massa, quis egestas leo. Cras sit amet tincidunt mi. Nulla ut nulla pulvinar mi ultrices laoreet.</p>
+
+                    <h5>Heading 5</h5>
+                    <p> Morbi dapibus fringilla congue. Ut sagittis mauris ut vestibulum semper. Aliquam tristique urna tempus finibus volutpat. Fusce quis tincidunt mauris. Mauris in lectus ut eros accumsan dignissim. Quisque eget fringilla massa, quis egestas leo. Cras sit amet tincidunt mi. Nulla ut nulla pulvinar mi ultrices laoreet.</p>
+
+                    <h6>Heading 6</h6>
+                    <p> Morbi dapibus fringilla congue. Ut sagittis mauris ut vestibulum semper. Aliquam tristique urna tempus finibus volutpat. Fusce quis tincidunt mauris. Mauris in lectus ut eros accumsan dignissim. Quisque eget fringilla massa, quis egestas leo. Cras sit amet tincidunt mi. Nulla ut nulla pulvinar mi ultrices laoreet.</p>
+                </div>
+            </div>
+
+            <div id="buttons">
+            <h2>Buttons</h2>
+                <div class="row padded-vertical text-center">
+                    <a class="btn" href="javascript:void(0)">Anchor element</a>
+                    <button class="btn" href="javascript:void(0)">Button element</button>
+                    <input type="submit" class="btn" value="Submit form element">
+                    <input type="button" class="btn" value="Button form element">
+                </div>
+                <div class="row padded-vertical text-center">
+                    <a class="btn btn-large" href="javascript:void(0)">Large button</a>
+                </div>
+                <div class="row padded-vertical text-center">
+                    <a class="btn btn-green" href="javascript:void(0)">Green button</a>
+                    <a class="btn btn-blue" href="javascript:void(0)">Blue button</a>
+                    <a class="btn btn-red" href="javascript:void(0)">Red button</a>
+                </div>
+                <div class="row padded-vertical text-center">
+                    <a class="btn btn-large btn-green" href="javascript:void(0)">Large green button</a>
+                    <a class="btn btn-large btn-blue" href="javascript:void(0)">Large blue button</a>
+                    <a class="btn btn-large btn-red" href="javascript:void(0)">Large red button</a>
+                </div>
+                <div class="row padded-vertical text-center">
+                    <a class="btn btn-small btn-green" href="javascript:void(0)">Small green button</a>
+                    <a class="btn btn-small btn-blue" href="javascript:void(0)">Small blue button</a>
+                    <a class="btn btn-small btn-red" href="javascript:void(0)">Small red button</a>
+                </div>
+            </div>
+
+            <div id="grid">
+            <h2>Grid</h2>
+                <div class="row">
+                    <div class="col-1-12 text-center">1/12</div>
+                    <div class="col-11-12 text-center">11/12</div>
+                </div>
+                <div class="row">
+                    <div class="col-2-12 text-center">2/12</div>
+                    <div class="col-10-12 text-center">10/12</div>
+                </div>
+                <div class="row">
+                    <div class="col-3-12 text-center">3/12</div>
+                    <div class="col-9-12 text-center">9/12</div>
+                </div>
+                <div class="row">
+                    <div class="col-4-12 text-center">4/12</div>
+                    <div class="col-8-12 text-center">8/12</div>
+                </div>
+                <div class="row">
+                    <div class="col-5-12 text-center">5/12</div>
+                    <div class="col-7-12 text-center">7/12</div>
+                </div>
+                <div class="row">
+                    <div class="col-6-12 text-center">6/12</div>
+                    <div class="col-6-12 text-center">6/12</div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
