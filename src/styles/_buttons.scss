@@ -16,7 +16,7 @@
     &:hover {
         background-color: $body-text-color;
         border-color: $body-text-color;
-        color: invert($body-text-color);
+        color: lighten(invert($body-text-color), 10%);
         transition: .2s all;
     }
 

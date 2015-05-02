@@ -11,10 +11,6 @@ body {
     font-size: $body-font-size;
 }
 
-p {
-    line-height: 1.45em;
-}
-
 h1,
 h2,
 h3,
@@ -61,15 +57,18 @@ h6 {
 }
 
 p {
+    line-height: 1.45em;
     margin: .1em 0 1em;
     padding: 0;
 }
 
 a {
-    color: #0e7a82;
+    color: $link-color;
     text-decoration: none;
+    transition: .2s all;
 }
 
 a:hover {
-    color: #0390c8;
+    color: lighten($link-color, 10%);
+    transition: .2s all;
 }
