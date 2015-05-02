@@ -4,3 +4,30 @@
     padding: 1em;
     width: 90%;
 }
+
+html,
+body {
+    height: 100%;
+}
+
+.hero {
+    height: 100%;
+    position: relative;
+    text-align: center;
+
+    .hero-content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    h1 {
+        font-size: 5em;
+    }
+
+    .tagline {
+        font-size: 1.4em;
+        color: lighten($body-text-color, 10%);
+    }
+}
