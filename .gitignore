@@ -3,6 +3,3 @@
 
 #node
 /node_modules/
-
-#build output directory
-/dist/
