@@ -32,7 +32,7 @@ body {
     }
 }
 
-@media (max-width: 700px) {
+@media (max-width: $mobile-breakpoint) {
     .hero h1 {
         font-size: 3em;
     }

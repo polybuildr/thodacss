@@ -205,18 +205,29 @@ html, body {
       display: table; }
     .navbar ul:after {
       clear: both; }
-    .navbar ul li {
-      float: left; }
-      .navbar ul li a {
-        display: block;
-        padding: 1em;
+  .navbar li {
+    float: left; }
+    .navbar li a {
+      display: block;
+      padding: 1em;
+      -webkit-transition: .2s all;
+              transition: .2s all; }
+      .navbar li a:hover {
+        background-color: #0b8ac0;
+        color: #fff;
         -webkit-transition: .2s all;
                 transition: .2s all; }
-        .navbar ul li a:hover {
-          background-color: #0b8ac0;
-          color: #fff;
-          -webkit-transition: .2s all;
-                  transition: .2s all; }
+
+@media (max-width: 700px) {
+  .navbar ul {
+    float: none;
+    width: 100%; }
+  .navbar li, .navbar .navbar-title {
+    border-right: 0;
+    border-top: 1px solid #ccc;
+    float: none;
+    text-align: center;
+    width: 100%; } }
 
 .btn {
   background-color: #fff;

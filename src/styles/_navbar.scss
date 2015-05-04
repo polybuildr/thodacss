@@ -46,21 +46,39 @@
         &:after {
             clear: both;
         }
+    }
 
-        li {
-            float: left;
+    li {
+        float: left;
 
-            a {
-                display: block;
-                padding: 1em;
+        a {
+            display: block;
+            padding: 1em;
+            transition: .2s all;
+
+            &:hover {
+                background-color: $link-color;
+                color: #fff;
                 transition: .2s all;
-
-                &:hover {
-                    background-color: $link-color;
-                    color: #fff;
-                    transition: .2s all;
-                }
             }
+        }
+    }
+}
+
+@media (max-width: $mobile-breakpoint) {
+    .navbar {
+        ul {
+            float: none;
+            width: 100%;
+        }
+
+        li,
+        .navbar-title {
+            border-right: 0;
+            border-top: 1px solid #ccc;
+            float: none;
+            text-align: center;
+            width: 100%;
         }
     }
 }
