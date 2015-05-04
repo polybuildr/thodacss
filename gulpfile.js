@@ -10,8 +10,14 @@ gulp.task('css', function() {
         .pipe(gulp.dest('dist/css/'));
 });
 
-gulp.task('build', ['css']);
+gulp.task('js', function() {
+    return gulp.src('src/scripts/*.js')
+        .pipe(gulp.dest('dist/js/'));
+});
+
+gulp.task('build', ['css', 'js']);
 
 gulp.task('default', ['build'], function() {
     gulp.watch('src/styles/*.{scss,css}', ['css']);
+    gulp.watch('src/scripts/*.js', ['js']);
 });
