@@ -207,18 +207,30 @@ html, body {
       clear: both; }
   .navbar li {
     float: left; }
-    .navbar li a {
-      display: block;
-      padding: 1em;
+  .navbar a {
+    display: block;
+    padding: 1em;
+    -webkit-transition: .2s all;
+            transition: .2s all; }
+    .navbar a:hover {
+      background-color: #0b8ac0;
+      color: #fff;
       -webkit-transition: .2s all;
               transition: .2s all; }
-      .navbar li a:hover {
-        background-color: #0b8ac0;
-        color: #fff;
-        -webkit-transition: .2s all;
-                transition: .2s all; }
+  .navbar .menu-toggle-button {
+    border: 1px solid #ccc;
+    display: none;
+    float: right;
+    font-family: monospace;
+    font-size: 2em;
+    padding: .25em .4em;
+    position: absolute;
+    right: 0;
+    top: 0; }
 
 @media (max-width: 700px) {
+  .navbar .menu-toggle-button {
+    display: block; }
   .navbar ul {
     float: none;
     width: 100%; }
@@ -227,7 +239,12 @@ html, body {
     border-top: 1px solid #ccc;
     float: none;
     text-align: center;
-    width: 100%; } }
+    -webkit-transition: all .2s;
+            transition: all .2s;
+    width: 100%; }
+  .navbar.collapsed li {
+    display: none;
+    overflow: hidden; } }
 
 .btn {
   background-color: #fff;
