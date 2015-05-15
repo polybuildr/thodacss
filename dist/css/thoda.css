@@ -182,6 +182,8 @@ html, body {
     display: table; }
   .navbar:after {
     clear: both; }
+  .navbar.fixed {
+    position: fixed; }
   .navbar .navbar-title {
     border-right: 1px solid #ccc;
     color: #6a6a6a;
@@ -246,7 +248,7 @@ html, body {
     display: none;
     overflow: hidden; } }
 
-.btn {
+.btn, input[type="submit"], button {
   background-color: #fff;
   border: 1px solid #ccc;
   border-radius: 1px;
@@ -261,34 +263,53 @@ html, body {
   text-transform: uppercase;
   -webkit-transition: .2s all;
           transition: .2s all; }
-  .btn:hover {
+  .btn:hover, input[type="submit"]:hover, button:hover {
     background-color: #111;
     border-color: #111;
     color: white;
     -webkit-transition: .2s all;
             transition: .2s all; }
-  .btn.btn-large {
+  .btn.btn-large, input[type="submit"].btn-large, button.btn-large {
     font-size: 1.1em; }
-  .btn.btn-small {
+  .btn.btn-small, input[type="submit"].btn-small, button.btn-small {
     font-size: .65em; }
-  .btn.btn-green {
+  .btn.btn-green, input[type="submit"].btn-green, button.btn-green {
     border: 1px solid #189d12;
     color: #189d12; }
-    .btn.btn-green:hover {
+    .btn.btn-green:hover, input[type="submit"].btn-green:hover, button.btn-green:hover {
       background-color: #189d12;
       color: #fff; }
-  .btn.btn-blue {
+  .btn.btn-blue, input[type="submit"].btn-blue, button.btn-blue {
     border: 1px solid #0b8ac0;
     color: #0b8ac0; }
-    .btn.btn-blue:hover {
+    .btn.btn-blue:hover, input[type="submit"].btn-blue:hover, button.btn-blue:hover {
       background-color: #0b8ac0;
       color: #fff; }
-  .btn.btn-red {
+  .btn.btn-red, input[type="submit"].btn-red, button.btn-red {
     border: 1px solid #e00;
     color: #e00; }
-    .btn.btn-red:hover {
+    .btn.btn-red:hover, input[type="submit"].btn-red:hover, button.btn-red:hover {
       background-color: #e00;
       color: #fff; }
+
+input[type="text"], input[type="password"], input[type="email"], .text-input {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 1px;
+  color: #2b2b2b;
+  display: inline-block;
+  height: auto;
+  letter-spacing: 1px;
+  margin: 0 .5em;
+  outline: 0;
+  padding: .4em;
+  -webkit-transition: .2s all;
+          transition: .2s all; }
+  input[type="text"]:hover, input[type="password"]:hover, input[type="email"]:hover, .text-input:hover {
+    border: 1px solid #999; }
+  input[type="text"]:focus, input[type="password"]:focus, input[type="email"]:focus, .text-input:focus {
+    border: 1px solid #999;
+    box-shadow: 0 0 5px #aaa; }
 
 table {
   margin: 1em 0; }
