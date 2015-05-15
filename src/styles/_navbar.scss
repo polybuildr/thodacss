@@ -16,6 +16,10 @@
         clear: both;
     }
 
+    &.fixed {
+        position: fixed;
+    }
+
     .navbar-title {
         border-right: 1px solid #ccc;
         color: lighten($body-text-color, 35%);
