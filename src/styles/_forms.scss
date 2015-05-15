@@ -1,0 +1,25 @@
+input[type="text"],
+input[type="password"],
+input[type="email"],
+.text-input {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 1px;
+    color: lighten($body-text-color, 10%);
+    display: inline-block;
+    height: auto;
+    letter-spacing: 1px;
+    margin: 0 .5em;
+    outline: 0;
+    padding: .4em;
+    transition: .2s all;
+
+    &:hover {
+        border: 1px solid #999;
+    }
+
+    &:focus {
+        border: 1px solid #999;
+        box-shadow: 0 0 5px #aaa;
+    }
+}
