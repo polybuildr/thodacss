@@ -52,6 +52,12 @@ a:hover {
   -webkit-transition: .2s all;
           transition: .2s all; }
 
+code {
+  background-color: #eee;
+  border: 1px solid #ccc;
+  padding: .1em .2em;
+  border-radius: 1px; }
+
 .container {
   margin: auto;
   max-width: 1280px;
@@ -324,6 +330,35 @@ table {
 td, th {
   border: 1px solid #ccc;
   padding: .5em; }
+
+ul.sidebar {
+  border: 1px solid #ccc;
+  border-radius: 1px;
+  color: #2b2b2b;
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+  ul.sidebar li.sidebar-title {
+    background-color: #eee;
+    display: block;
+    font-size: .8em;
+    font-weight: 600;
+    padding: .3em .6em;
+    text-transform: uppercase; }
+  ul.sidebar li.sidebar-text {
+    display: block;
+    padding: .4em .8em; }
+  ul.sidebar li a {
+    display: block;
+    padding: .4em .8em; }
+    ul.sidebar li a:hover {
+      background-color: #0b8ac0;
+      color: #fff; }
+  ul.sidebar ul {
+    list-style: none;
+    padding: 0 1em; }
+    ul.sidebar ul li.sidebar-title, ul.sidebar ul li.sidebar-text, ul.sidebar ul li a {
+      padding: .3em .5em; }
 
 .cf:before, .cf:after {
   content: ' ';
