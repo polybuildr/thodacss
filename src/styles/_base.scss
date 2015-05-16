@@ -72,3 +72,10 @@ a:hover {
     color: lighten($link-color, 10%);
     transition: .2s all;
 }
+
+code {
+    background-color: #eee;
+    border: 1px solid #ccc;
+    padding: .1em .2em;
+    border-radius: 1px;
+}
