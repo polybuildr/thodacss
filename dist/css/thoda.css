@@ -301,7 +301,7 @@ input[type="text"], input[type="password"], input[type="email"], .text-input {
   height: auto;
   margin: 0 .5em;
   outline: 0;
-  padding: .4em;
+  padding: .4em .6em;
   -webkit-transition: .2s all;
           transition: .2s all; }
   input[type="text"]:hover, input[type="password"]:hover, input[type="email"]:hover, .text-input:hover {
