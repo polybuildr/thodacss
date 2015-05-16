@@ -299,7 +299,6 @@ input[type="text"], input[type="password"], input[type="email"], .text-input {
   color: #2b2b2b;
   display: inline-block;
   height: auto;
-  letter-spacing: 1px;
   margin: 0 .5em;
   outline: 0;
   padding: .4em;
