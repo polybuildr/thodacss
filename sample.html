@@ -171,10 +171,28 @@
             </div>
             <div id="forms">
                 <h2>Forms</h2>
+                <h3>Inline forms</h3>
                 <form>
                     <label>First name: <input type="text"> </label>
                     <label>Last name: <input type="text"> </label>
                     <input type="submit">
+                </form>
+                <h3>Block forms</h3>
+                <form class="block">
+                    <label>First name: <input type="text"> </label>
+                    <label>Last name: <input type="text"> </label>
+                    <input type="submit">
+                </form>
+                <h3>Full width forms</h3>
+                <form class="block full-width">
+                    <label>First name: <input type="text"> </label>
+                    <label>Last name: <input type="text"> </label>
+                    <label>Additional information:</label>
+                    <textarea>Hello, world!</textarea>
+                    <div class="text-right">
+                        <button class="btn-red">Cancel</button>
+                        <input type="submit" class="btn-blue">
+                    </div>
                 </form>
             </div>
         </div>

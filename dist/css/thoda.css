@@ -292,7 +292,13 @@ html, body {
       background-color: #e00;
       color: #fff; }
 
-input[type="text"], input[type="password"], input[type="email"], .text-input {
+form.block input[type="text"], form.block input[type="password"], form.block input[type="email"], form.block textarea, form.block label, form.block .text-input {
+  display: block;
+  margin: .4em 0; }
+form.block.full-width input[type="text"], form.block.full-width input[type="password"], form.block.full-width input[type="email"], form.block.full-width textarea, form.block.full-width label, form.block.full-width .text-input {
+  width: 100%; }
+
+input[type="text"], input[type="password"], input[type="email"], textarea, .text-input {
   background-color: #fff;
   border: 1px solid #ccc;
   border-radius: 1px;
@@ -304,9 +310,9 @@ input[type="text"], input[type="password"], input[type="email"], .text-input {
   padding: .4em .6em;
   -webkit-transition: .2s all;
           transition: .2s all; }
-  input[type="text"]:hover, input[type="password"]:hover, input[type="email"]:hover, .text-input:hover {
+  input[type="text"]:hover, input[type="password"]:hover, input[type="email"]:hover, textarea:hover, .text-input:hover {
     border: 1px solid #999; }
-  input[type="text"]:focus, input[type="password"]:focus, input[type="email"]:focus, .text-input:focus {
+  input[type="text"]:focus, input[type="password"]:focus, input[type="email"]:focus, textarea:focus, .text-input:focus {
     border: 1px solid #999;
     box-shadow: 0 0 5px #aaa; }
 

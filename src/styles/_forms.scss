@@ -1,6 +1,29 @@
+form.block {
+    input[type="text"],
+    input[type="password"],
+    input[type="email"],
+    textarea,
+    label,
+    .text-input {
+        display: block;
+        margin: .4em 0;
+    }
+    &.full-width {
+        input[type="text"],
+        input[type="password"],
+        input[type="email"],
+        textarea,
+        label,
+        .text-input {
+            width: 100%;
+        }
+    }
+}
+
 input[type="text"],
 input[type="password"],
 input[type="email"],
+textarea,
 .text-input {
     background-color: #fff;
     border: 1px solid #ccc;
