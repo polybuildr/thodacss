@@ -15,7 +15,8 @@ button {
     text-transform: uppercase;
     transition: .2s all;
 
-    &:hover {
+    &:hover,
+    &:focus {
         background-color: $body-text-color;
         border-color: $body-text-color;
         color: lighten(invert($body-text-color), 10%);
@@ -34,7 +35,8 @@ button {
         border: 1px solid #189d12;
         color: #189d12;
 
-        &:hover {
+	&:hover,
+	&:focus {
             background-color: #189d12;
             color: #fff;
         }
@@ -44,7 +46,8 @@ button {
         border: 1px solid #0b8ac0;
         color: #0b8ac0;
 
-        &:hover {
+	&:hover,
+	&:focus {
             background-color: #0b8ac0;
             color: #fff;
         }
@@ -54,7 +57,8 @@ button {
         border: 1px solid #e00;
         color: #e00;
 
-        &:hover {
+	&:hover,
+	&:focus {
             background-color: #e00;
             color: #fff;
         }

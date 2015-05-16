@@ -269,7 +269,7 @@ html, body {
   text-transform: uppercase;
   -webkit-transition: .2s all;
           transition: .2s all; }
-  .btn:hover, input[type="submit"]:hover, button:hover {
+  .btn:hover, .btn:focus, input[type="submit"]:hover, input[type="submit"]:focus, button:hover, button:focus {
     background-color: #111;
     border-color: #111;
     color: white;
@@ -282,19 +282,19 @@ html, body {
   .btn.btn-green, input[type="submit"].btn-green, button.btn-green {
     border: 1px solid #189d12;
     color: #189d12; }
-    .btn.btn-green:hover, input[type="submit"].btn-green:hover, button.btn-green:hover {
+    .btn.btn-green:hover, .btn.btn-green:focus, input[type="submit"].btn-green:hover, input[type="submit"].btn-green:focus, button.btn-green:hover, button.btn-green:focus {
       background-color: #189d12;
       color: #fff; }
   .btn.btn-blue, input[type="submit"].btn-blue, button.btn-blue {
     border: 1px solid #0b8ac0;
     color: #0b8ac0; }
-    .btn.btn-blue:hover, input[type="submit"].btn-blue:hover, button.btn-blue:hover {
+    .btn.btn-blue:hover, .btn.btn-blue:focus, input[type="submit"].btn-blue:hover, input[type="submit"].btn-blue:focus, button.btn-blue:hover, button.btn-blue:focus {
       background-color: #0b8ac0;
       color: #fff; }
   .btn.btn-red, input[type="submit"].btn-red, button.btn-red {
     border: 1px solid #e00;
     color: #e00; }
-    .btn.btn-red:hover, input[type="submit"].btn-red:hover, button.btn-red:hover {
+    .btn.btn-red:hover, .btn.btn-red:focus, input[type="submit"].btn-red:hover, input[type="submit"].btn-red:focus, button.btn-red:hover, button.btn-red:focus {
       background-color: #e00;
       color: #fff; }
 
