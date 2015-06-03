@@ -37,7 +37,8 @@ body {
 }
 
 @media (max-width: $mobile-breakpoint) {
-    .hero h1 {
+    .hero h1,
+    .column-hero h1 {
         font-size: 3em;
     }
 }
