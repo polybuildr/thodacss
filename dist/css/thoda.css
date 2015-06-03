@@ -58,6 +58,9 @@ code {
   padding: .1em .2em;
   border-radius: 1px; }
 
+.muted {
+  color: #666; }
+
 .container {
   margin: auto;
   max-width: 1280px;
