@@ -9,28 +9,6 @@
         <link rel="stylesheet" href="dist/css/normalize.css">
         <link rel="stylesheet" href="dist/css/thoda.css">
         <style>
-        #grid .row {
-            margin: 1em 0;
-        }
-
-        #grid [class*=col-] {
-            background-color: #eee;
-            border: 1px solid #ccc;
-            padding: 1em;
-            transition: .1s all;
-        }
-
-        #grid [class*=col-]:hover {
-            background-color: #ddd;
-            transition: .1s all;
-        }
-
-        .container > div > h2 {
-            border-bottom: 1px solid #ccc;
-        }
-        #buttons .btn {
-            margin: .3em;
-        }
         .hero {
             background-image: url('bg.jpg');
         }
@@ -40,91 +18,65 @@
         <div class="navbar collapsed">
             <a class="navbar-title" href="javascript:void(0)">ThodaCSS</a>
             <ul class="pull-right">
-                <li><a href="javascript:void(0)">Link</a></li>
-                <li><a href="javascript:void(0)">Link</a></li>
-                <li><a href="javascript:void(0)">Link</a></li>
+                <li><a href="docs">Docs</a></li>
+                <li><a target="_blank" href="https://github.com/polybuildr/thodacss">View on GitHub</a></li>
             </ul>
             <a href="javascript:void(0)" class="menu-toggle-button">&equiv;</a>
             </a>
         </div>
         <div class="hero">
             <div class="hero-content">
-                <h1>ThodaCSS</h1>
-                <p class="tagline">A minimal CSS framework.</p>
-                <a class="btn btn-large" href="#learn">Learn more</a>
+                <h1>Thoda CSS</h1>
+                <p class="tagline">A lightweight, minimal CSS framework.</p>
+                <p>
+                    <a class="btn btn-blue btn-large" href="https://github.com/polybuildr/thodacss/releases/download/v0.1.0/thodacss-release-v0.1.0.zip">Download v0.1.0</a>
+                </p>
+                <p>
+                    <a class="btn" target="_blank" href="https://github.com/polybuildr/thodacss">
+                        View on GitHub
+                    </a>
+                    or
+                    <a class="btn btn-green" href="docs/">Read the docs</a>
+                </p>
             </div>
         </div>
-        <div class="container" id="learn">
-            <div id="typography">
-                <h2>Typography</h2>
-                <div>
-                    <h1>Heading 1</h1>
-                    <h2>Heading 2</h2>
-                    <h3>Heading 3</h3>
-                    <h4>Heading 4</h4>
-                    <h5>Heading 5</h5>
-                    <h6>Heading 6</h6>
-                    <p>Those were headings. And this is a how a paragraph is styled.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pulvinar purus justo, eu sagittis quam condimentum in. Sed non leo metus. Nam varius tincidunt fringilla. Donec orci ante, fringilla a malesuada blandit, convallis et dui. Pellentesque euismod tristique libero posuere finibus. Integer quis magna nec enim commodo sollicitudin.</p>
+        <div class="container">
+            <h2>Why ThodaCSS?</h2>
+            <p>Because it's:</p>
+            <div class="row row-padded">
+                <div class="col-3-12 padded-vertical">
+                    <h3>Lightweight</h3>
+                    <p>ThodaCSS weighs in at just under 7&nbsp;KiB.</p>
+                </div>
+                <div class="col-3-12 padded">
+                    <h3>Simple</h3>
+                    <p>ThodaCSS has a clean, flat design. Nothing flashy.</p>
+                </div>
+                <div class="col-3-12 padded">
+                    <h3>Modular</h3>
+                    <p>ThodaCSS is separated into separate SCSS files. Use only what you need. Custom builds can be even smaller!</p>
+                </div>
+                <div class="col-3-12 padded-vertical">
+                    <h3>Mobile-ready</h3>
+                    <p>ThodaCSS is reponsive. Go on, resize this window to give it a try.</p>
                 </div>
             </div>
-
-            <div id="buttons">
-            <h2>Buttons</h2>
-                <div class="row padded-vertical text-center">
-                    <a class="btn" href="javascript:void(0)">Anchor element</a>
-                    <button class="btn" href="javascript:void(0)">Button element</button>
-                    <input type="submit" class="btn" value="Submit form element">
-                    <input type="button" class="btn" value="Button form element">
-                </div>
-                <div class="row padded-vertical text-center">
-                    <a class="btn btn-large" href="javascript:void(0)">Large button</a>
-                </div>
-                <div class="row padded-vertical text-center">
-                    <a class="btn btn-green" href="javascript:void(0)">Green button</a>
-                    <a class="btn btn-blue" href="javascript:void(0)">Blue button</a>
-                    <a class="btn btn-red" href="javascript:void(0)">Red button</a>
-                </div>
-                <div class="row padded-vertical text-center">
-                    <a class="btn btn-large btn-green" href="javascript:void(0)">Large green button</a>
-                    <a class="btn btn-large btn-blue" href="javascript:void(0)">Large blue button</a>
-                    <a class="btn btn-large btn-red" href="javascript:void(0)">Large red button</a>
-                </div>
-                <div class="row padded-vertical text-center">
-                    <a class="btn btn-small btn-green" href="javascript:void(0)">Small green button</a>
-                    <a class="btn btn-small btn-blue" href="javascript:void(0)">Small blue button</a>
-                    <a class="btn btn-small btn-red" href="javascript:void(0)">Small red button</a>
-                </div>
+            <h2>ThodaCSS is Open source</h2>
+            <p>ThodaCSS's code is <a target="_blank" href="https://github.com/polybuildr/thodacss">hosted on GitHub</a>, released under the terms of the MIT license.</p>
+            <div class="text-center padded-vertical">
+                <h2>Ready to give it a try?</h2>
+                <a class="padded btn btn-large btn-blue" href="https://github.com/polybuildr/thodacss/releases/download/v0.1.0/thodacss-release-v0.1.0.zip">Download v0.1.0</a>
             </div>
-
-            <div id="grid">
-            <h2>Grid</h2>
-                <div class="row">
-                    <div class="col-1-12 text-center">1/12</div>
-                    <div class="col-11-12 text-center">11/12</div>
-                </div>
-                <div class="row">
-                    <div class="col-2-12 text-center">2/12</div>
-                    <div class="col-10-12 text-center">10/12</div>
-                </div>
-                <div class="row">
-                    <div class="col-3-12 text-center">3/12</div>
-                    <div class="col-9-12 text-center">9/12</div>
-                </div>
-                <div class="row">
-                    <div class="col-4-12 text-center">4/12</div>
-                    <div class="col-8-12 text-center">8/12</div>
-                </div>
-                <div class="row">
-                    <div class="col-5-12 text-center">5/12</div>
-                    <div class="col-7-12 text-center">7/12</div>
-                </div>
-                <div class="row">
-                    <div class="col-6-12 text-center">6/12</div>
-                    <div class="col-6-12 text-center">6/12</div>
-                </div>
+        </div>
+        <div style="background-color:#fbfbfb;border-top:1px solid #ccc;" class="padded text-center">
+            <div class="muted">
+                <a class="github-button" href="https://github.com/polybuildr/thodacss" data-style="mega" data-count-href="/polybuildr/thodacss/stargazers" data-count-api="/repos/polybuildr/thodacss#stargazers_count" data-count-aria-label="# stargazers on GitHub" aria-label="Star polybuildr/thodacss on GitHub">Star</a>
+                <a class="github-button" href="https://github.com/polybuildr" data-style="mega" data-count-href="/polybuildr/followers" data-count-api="/users/polybuildr#followers" data-count-aria-label="# followers on GitHub" aria-label="Follow @polybuildr on GitHub">Follow @polybuildr</a>
             </div>
+            <p class="muted">
+                Code licensed under <a href="https://github.com/polybuildr/thodacss/blob/master/LICENSE">MIT</a> &middot; Made with &lt;3 by <a href="http://vghaisas.me">Vivek Ghaisas</a> (@polybuildr).</p>
         </div>
         <script src="dist/js/navbar.js"></script>
+        <script async defer id="github-bjs" src="https://buttons.github.io/buttons.js"></script>
     </body>
 </html>

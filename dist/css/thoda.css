@@ -52,6 +52,15 @@ a:hover {
   -webkit-transition: .2s all;
           transition: .2s all; }
 
+code {
+  background-color: #eee;
+  border: 1px solid #ccc;
+  padding: .1em .2em;
+  border-radius: 1px; }
+
+.muted {
+  color: #666; }
+
 .container {
   margin: auto;
   max-width: 1280px;
@@ -63,8 +72,7 @@ html, body {
 
 .hero {
   height: 100%;
-  position: relative;
-  text-align: center; }
+  position: relative; }
   .hero .hero-content {
     position: absolute;
     top: 50%;
@@ -72,9 +80,12 @@ html, body {
     -webkit-transform: translate(-50%, -50%);
         -ms-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%); }
-  .hero h1 {
+
+.hero, .column-hero {
+  text-align: center; }
+  .hero h1, .column-hero h1 {
     font-size: 5em; }
-  .hero .tagline {
+  .hero .tagline, .column-hero .tagline {
     font-size: 1.4em;
     color: #2b2b2b; }
 
@@ -182,6 +193,8 @@ html, body {
     display: table; }
   .navbar:after {
     clear: both; }
+  .navbar.fixed {
+    position: fixed; }
   .navbar .navbar-title {
     border-right: 1px solid #ccc;
     color: #6a6a6a;
@@ -221,9 +234,8 @@ html, body {
     border: 1px solid #ccc;
     display: none;
     float: right;
-    font-family: monospace;
-    font-size: 2em;
-    padding: .25em .4em;
+    line-height: 1.4em;
+    padding: 1em;
     position: absolute;
     right: 0;
     top: 0; }
@@ -246,11 +258,12 @@ html, body {
     display: none;
     overflow: hidden; } }
 
-.btn {
+.btn, input[type="submit"], button {
   background-color: #fff;
-  border: 1px solid #ccc;
+  border: 1px solid #aaa;
   border-radius: 1px;
   color: #515151;
+  cursor: pointer;
   display: inline-block;
   font-size: .8em;
   height: auto;
@@ -261,34 +274,109 @@ html, body {
   text-transform: uppercase;
   -webkit-transition: .2s all;
           transition: .2s all; }
-  .btn:hover {
+  .btn:hover, .btn:focus, input[type="submit"]:hover, input[type="submit"]:focus, button:hover, button:focus {
     background-color: #111;
     border-color: #111;
     color: white;
     -webkit-transition: .2s all;
             transition: .2s all; }
-  .btn.btn-large {
+  .btn.btn-large, input[type="submit"].btn-large, button.btn-large {
     font-size: 1.1em; }
-  .btn.btn-small {
+  .btn.btn-small, input[type="submit"].btn-small, button.btn-small {
     font-size: .65em; }
-  .btn.btn-green {
+  .btn.btn-green, input[type="submit"].btn-green, button.btn-green {
     border: 1px solid #189d12;
     color: #189d12; }
-    .btn.btn-green:hover {
+    .btn.btn-green:hover, .btn.btn-green:focus, input[type="submit"].btn-green:hover, input[type="submit"].btn-green:focus, button.btn-green:hover, button.btn-green:focus {
       background-color: #189d12;
       color: #fff; }
-  .btn.btn-blue {
+  .btn.btn-blue, input[type="submit"].btn-blue, button.btn-blue {
     border: 1px solid #0b8ac0;
     color: #0b8ac0; }
-    .btn.btn-blue:hover {
+    .btn.btn-blue:hover, .btn.btn-blue:focus, input[type="submit"].btn-blue:hover, input[type="submit"].btn-blue:focus, button.btn-blue:hover, button.btn-blue:focus {
       background-color: #0b8ac0;
       color: #fff; }
-  .btn.btn-red {
+  .btn.btn-red, input[type="submit"].btn-red, button.btn-red {
     border: 1px solid #e00;
     color: #e00; }
-    .btn.btn-red:hover {
+    .btn.btn-red:hover, .btn.btn-red:focus, input[type="submit"].btn-red:hover, input[type="submit"].btn-red:focus, button.btn-red:hover, button.btn-red:focus {
       background-color: #e00;
       color: #fff; }
+
+form.block input[type="text"], form.block input[type="password"], form.block input[type="email"], form.block textarea, form.block label, form.block .text-input {
+  display: block;
+  margin: .4em 0; }
+form.block.full-width input[type="text"], form.block.full-width input[type="password"], form.block.full-width input[type="email"], form.block.full-width textarea, form.block.full-width label, form.block.full-width .text-input {
+  width: 100%; }
+
+input[type="text"], input[type="password"], input[type="email"], textarea, .text-input {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 1px;
+  color: #2b2b2b;
+  display: inline-block;
+  height: auto;
+  margin: 0 .5em;
+  outline: 0;
+  padding: .4em .6em;
+  -webkit-transition: .2s all;
+          transition: .2s all; }
+  input[type="text"]:hover, input[type="password"]:hover, input[type="email"]:hover, textarea:hover, .text-input:hover {
+    border: 1px solid #999; }
+  input[type="text"]:focus, input[type="password"]:focus, input[type="email"]:focus, textarea:focus, .text-input:focus {
+    border: 1px solid #999;
+    box-shadow: 0 0 5px #aaa; }
+
+@media (max-width: 700px) {
+  input[type="text"], input[type="password"], input[type="email"], textarea, label, .text-input {
+    display: block;
+    margin: .4em 0; } }
+
+table {
+  margin: 1em 0; }
+  table.striped tr:nth-child(even) {
+    background-color: #f5f5f5; }
+
+td, th {
+  border: 1px solid #ccc;
+  padding: .5em; }
+
+ul.sidebar {
+  border: 1px solid #ccc;
+  border-radius: 1px;
+  color: #2b2b2b;
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+  ul.sidebar li.sidebar-title {
+    background-color: #eee;
+    display: block;
+    font-size: .9em;
+    font-weight: 600;
+    padding: .6em 1.2em;
+    text-transform: uppercase; }
+  ul.sidebar li.sidebar-text {
+    display: block;
+    padding: .4em .8em; }
+  ul.sidebar li a {
+    display: block;
+    padding: .4em .8em; }
+    ul.sidebar li a:hover, ul.sidebar li a.active {
+      background-color: #0b8ac0;
+      color: #fff; }
+  ul.sidebar ul {
+    list-style: none;
+    padding: 0 1em; }
+    ul.sidebar ul li.sidebar-title, ul.sidebar ul li.sidebar-text, ul.sidebar ul li a {
+      padding: .3em .5em; }
+  ul.sidebar.sidebar-column {
+    bottom: 0;
+    overflow: auto;
+    position: fixed;
+    top: 0;
+    z-index: 1000; }
+    ul.sidebar.sidebar-column li.sidebar-text, ul.sidebar.sidebar-column a {
+      padding: .6em 1.2em; }
 
 .cf:before, .cf:after {
   content: ' ';
@@ -332,3 +420,6 @@ html, body {
 .padded-horizontal {
   padding-left: 1em;
   padding-right: 1em; }
+
+.full-width {
+  width: 100%; }
