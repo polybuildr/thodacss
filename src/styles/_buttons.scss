@@ -5,6 +5,7 @@ button {
     border: 1px solid #aaa;
     border-radius: 1px;
     color: lighten($body-text-color, 25%);
+    cursor: pointer;
     display: inline-block;
     font-size: .8em;
     height: auto;
