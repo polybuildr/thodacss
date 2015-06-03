@@ -229,9 +229,8 @@ html, body {
     border: 1px solid #ccc;
     display: none;
     float: right;
-    font-family: monospace;
-    font-size: 2em;
-    padding: .25em .4em;
+    line-height: 1.4em;
+    padding: 1em;
     position: absolute;
     right: 0;
     top: 0; }
@@ -321,6 +320,11 @@ input[type="text"], input[type="password"], input[type="email"], textarea, .text
   input[type="text"]:focus, input[type="password"]:focus, input[type="email"]:focus, textarea:focus, .text-input:focus {
     border: 1px solid #999;
     box-shadow: 0 0 5px #aaa; }
+
+@media (max-width: 700px) {
+  input[type="text"], input[type="password"], input[type="email"], textarea, label, .text-input {
+    display: block;
+    margin: .4em 0; } }
 
 table {
   margin: 1em 0; }
