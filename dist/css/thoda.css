@@ -90,8 +90,10 @@ html, body {
     color: #2b2b2b; }
 
 @media (max-width: 700px) {
-  .hero h1 {
-    font-size: 3em; } }
+  .hero h1, .column-hero h1 {
+    font-size: 3em; }
+  .mobile-block {
+    display: block; } }
 
 .row:before, .row:after {
   content: ' ';
@@ -377,6 +379,10 @@ ul.sidebar {
     z-index: 1000; }
     ul.sidebar.sidebar-column li.sidebar-text, ul.sidebar.sidebar-column a {
       padding: .6em 1.2em; }
+
+@media (max-width: 700px) {
+  ul.sidebar.sidebar-column {
+    position: static; } }
 
 .cf:before, .cf:after {
   content: ' ';
