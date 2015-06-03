@@ -12,3 +12,4 @@ function toggleNav() {
 }
 
 document.querySelector('.menu-toggle-button').onclick = toggleNav;
+toggleNav();
