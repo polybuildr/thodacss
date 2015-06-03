@@ -257,9 +257,10 @@ html, body {
 
 .btn, input[type="submit"], button {
   background-color: #fff;
-  border: 1px solid #ccc;
+  border: 1px solid #aaa;
   border-radius: 1px;
   color: #515151;
+  cursor: pointer;
   display: inline-block;
   font-size: .8em;
   height: auto;
@@ -344,18 +345,12 @@ ul.sidebar {
   list-style: none;
   margin: 0;
   padding: 0; }
-  ul.sidebar.sidebar-column {
-    bottom: 0;
-    overflow: auto;
-    position: fixed;
-    top: 0;
-    z-index: 1000; }
   ul.sidebar li.sidebar-title {
     background-color: #eee;
     display: block;
-    font-size: .8em;
+    font-size: .9em;
     font-weight: 600;
-    padding: .3em .6em;
+    padding: .6em 1.2em;
     text-transform: uppercase; }
   ul.sidebar li.sidebar-text {
     display: block;
@@ -363,7 +358,7 @@ ul.sidebar {
   ul.sidebar li a {
     display: block;
     padding: .4em .8em; }
-    ul.sidebar li a:hover {
+    ul.sidebar li a:hover, ul.sidebar li a.active {
       background-color: #0b8ac0;
       color: #fff; }
   ul.sidebar ul {
@@ -371,6 +366,14 @@ ul.sidebar {
     padding: 0 1em; }
     ul.sidebar ul li.sidebar-title, ul.sidebar ul li.sidebar-text, ul.sidebar ul li a {
       padding: .3em .5em; }
+  ul.sidebar.sidebar-column {
+    bottom: 0;
+    overflow: auto;
+    position: fixed;
+    top: 0;
+    z-index: 1000; }
+    ul.sidebar.sidebar-column li.sidebar-text, ul.sidebar.sidebar-column a {
+      padding: .6em 1.2em; }
 
 .cf:before, .cf:after {
   content: ' ';
