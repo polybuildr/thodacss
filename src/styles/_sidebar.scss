@@ -6,6 +6,14 @@ ul.sidebar {
     margin: 0;
     padding: 0;
 
+    &.sidebar-column {
+        bottom: 0;
+        overflow: auto;
+        position: fixed;
+        top: 0;
+        z-index: 1000;
+    }
+
     li {
         &.sidebar-title {
             background-color: #eee;
