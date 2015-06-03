@@ -69,8 +69,7 @@ html, body {
 
 .hero {
   height: 100%;
-  position: relative;
-  text-align: center; }
+  position: relative; }
   .hero .hero-content {
     position: absolute;
     top: 50%;
@@ -78,9 +77,12 @@ html, body {
     -webkit-transform: translate(-50%, -50%);
         -ms-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%); }
-  .hero h1 {
+
+.hero, .column-hero {
+  text-align: center; }
+  .hero h1, .column-hero h1 {
     font-size: 5em; }
-  .hero .tagline {
+  .hero .tagline, .column-hero .tagline {
     font-size: 1.4em;
     color: #2b2b2b; }
 
@@ -342,6 +344,12 @@ ul.sidebar {
   list-style: none;
   margin: 0;
   padding: 0; }
+  ul.sidebar.sidebar-column {
+    bottom: 0;
+    overflow: auto;
+    position: fixed;
+    top: 0;
+    z-index: 1000; }
   ul.sidebar li.sidebar-title {
     background-color: #eee;
     display: block;
