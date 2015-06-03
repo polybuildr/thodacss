@@ -25,7 +25,8 @@ ul.sidebar {
             display: block;
             padding: .4em .8em;
 
-            &:hover {
+            &:hover,
+            &.active {
                 background-color: #0b8ac0;
                 color: #fff;
             }
