@@ -45,3 +45,15 @@ textarea,
         box-shadow: 0 0 5px #aaa;
     }
 }
+
+@media (max-width: $mobile-breakpoint) {
+    input[type="text"],
+    input[type="password"],
+    input[type="email"],
+    textarea,
+    label,
+    .text-input {
+        display: block;
+        margin: .4em 0;
+    }
+}
