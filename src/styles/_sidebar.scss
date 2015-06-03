@@ -58,3 +58,9 @@ ul.sidebar {
         }
     }
 }
+
+@media (max-width: $mobile-breakpoint) {
+    ul.sidebar.sidebar-column {
+        position: static;
+    }
+}
