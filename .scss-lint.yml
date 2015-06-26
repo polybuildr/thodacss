@@ -1,5 +1,15 @@
 linters:
     BorderZero:
         enabled: false
+    ColorVariable:
+        enabled: false
+    QualifyingElement:
+        enabled: false
+    DuplicateProperty:
+        enabled: false
+    SelectorDepth:
+        max_depth: 4
+    NestingDepth:
+        max_depth: 4
     Indentation:
         width: 4
