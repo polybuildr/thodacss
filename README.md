@@ -1,4 +1,5 @@
 # ThodaCSS
+[![Build Status](https://travis-ci.org/polybuildr/thodacss.svg?branch=master)](https://travis-ci.org/polybuildr/thodacss)
 
 ThodaCSS is a lightweight, minimal CSS framework. Check out http://polybuildr.github.io/thodacss for more information.
 
