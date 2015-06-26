@@ -27,7 +27,7 @@
 @media (max-width: $mobile-breakpoint) {
     [class*=col-] {
         float: none;
-        width: 100%;
         margin-left: 0;
+        width: 100%;
     }
 }

@@ -24,12 +24,12 @@ ul.sidebar {
         a {
             display: block;
             padding: .4em .8em;
+        }
 
-            &:hover,
-            &.active {
-                background-color: #0b8ac0;
-                color: #fff;
-            }
+        a:hover,
+        a.active {
+            background-color: #0b8ac0;
+            color: #fff;
         }
     }
 
@@ -53,7 +53,8 @@ ul.sidebar {
         top: 0;
         z-index: 1000;
 
-        li.sidebar-text, a {
+        li.sidebar-text,
+        a {
             padding: .6em 1.2em;
         }
     }
