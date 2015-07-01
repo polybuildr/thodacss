@@ -57,3 +57,19 @@
 .full-width {
     width: 100%;
 }
+
+@media (min-width: $mobile-breakpoint) {
+    .desktop-hide {
+        display: none;
+    }
+}
+
+@media (max-width: $mobile-breakpoint) {
+    .mobile-block {
+        display: block;
+    }
+
+    .mobile-hide {
+        display: none;
+    }
+}
