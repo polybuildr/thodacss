@@ -1,7 +1,7 @@
 .navbar {
-    background-color: #fff;
+    background-color: $body-background-color;
     background-color: rgba(255, 255, 255, .9);
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid darken($body-background-color, 20);
     position: absolute;
     width: 100%;
     z-index: 1000;
@@ -21,7 +21,7 @@
     }
 
     .navbar-title {
-        border-right: 1px solid #ccc;
+        border-right: 1px solid darken($body-background-color, 20);
         color: lighten($body-text-color, 35%);
         display: block;
         float: left;
@@ -30,8 +30,8 @@
     }
 
     .navbar-title:hover {
-        background-color: #eee;
-        border-right: 1px solid #ccc;
+        background-color: darken($body-background-color, 10);
+        border-right: 1px solid darken($body-background-color, 20);
         color: $body-text-color;
         transition: .2s all;
     }
@@ -63,13 +63,13 @@
 
         &:hover {
             background-color: $link-color;
-            color: #fff;
+            color: $body-background-color;
             transition: .2s all;
         }
     }
 
     .menu-toggle-button {
-        border: 1px solid #ccc;
+        border: 1px solid darken($body-background-color, 20);
         display: none;
         float: right;
         line-height: 1.4em;
@@ -94,7 +94,7 @@
         li,
         .navbar-title {
             border-right: 0;
-            border-top: 1px solid #ccc;
+            border-top: 1px solid darken($body-background-color, 20);
             float: none;
             text-align: center;
             transition: all .2s;

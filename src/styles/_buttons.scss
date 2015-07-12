@@ -1,8 +1,8 @@
 .btn,
 input[type="submit"],
 button {
-    background-color: #fff;
-    border: 1px solid #aaa;
+    background-color: $body-background-color;
+    border: 1px solid darken($body-background-color, 35);
     border-radius: 1px;
     color: lighten($body-text-color, 25%);
     cursor: pointer;
@@ -33,35 +33,35 @@ button {
     }
 
     &.btn-green {
-        border: 1px solid #189d12;
-        color: #189d12;
+        border: 1px solid $button-green-color;
+        color: $button-green-color;
 
         &:hover,
         &:focus {
-            background-color: #189d12;
-            color: #fff;
+            background-color: $button-green-color;
+            color: $body-background-color;
         }
     }
 
     &.btn-blue {
-        border: 1px solid #0b8ac0;
-        color: #0b8ac0;
+        border: 1px solid $link-color;
+        color: $link-color;
 
         &:hover,
         &:focus {
-            background-color: #0b8ac0;
-            color: #fff;
+            background-color: $link-color;
+            color: $body-background-color;
         }
     }
 
     &.btn-red {
-        border: 1px solid #e00;
-        color: #e00;
+        border: 1px solid $button-red-color;
+        color: $button-red-color;
 
         &:hover,
         &:focus {
-            background-color: #e00;
-            color: #fff;
+            background-color: $button-red-color;
+            color: $body-background-color;
         }
     }
 }

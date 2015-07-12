@@ -26,8 +26,8 @@ input[type="password"],
 input[type="email"],
 textarea,
 .text-input {
-    background-color: #fff;
-    border: 1px solid #ccc;
+    background-color: $body-background-color;
+    border: 1px solid darken($body-background-color, 20);
     border-radius: 1px;
     color: lighten($body-text-color, 10%);
     display: inline-block;
@@ -38,12 +38,12 @@ textarea,
     transition: .2s all;
 
     &:hover {
-        border: 1px solid #999;
+        border: 1px solid darken($body-background-color, 40);
     }
 
     &:focus {
-        border: 1px solid #999;
-        box-shadow: 0 0 5px #aaa;
+        border: 1px solid darken($body-background-color, 40);
+        box-shadow: 0 0 5px  darken($body-background-color, 35);
     }
 }
 

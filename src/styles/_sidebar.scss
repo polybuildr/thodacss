@@ -1,5 +1,5 @@
 ul.sidebar {
-    border: 1px solid #ccc;
+    border: 1px solid darken($body-background-color, 20);
     border-radius: 1px;
     color: lighten($body-text-color, 10%);
     list-style: none;
@@ -8,7 +8,7 @@ ul.sidebar {
 
     li {
         &.sidebar-title {
-            background-color: #eee;
+            background-color: darken($body-background-color, 10);
             display: block;
             font-size: .9em;
             font-weight: 600;
@@ -28,8 +28,8 @@ ul.sidebar {
 
         a:hover,
         a.active {
-            background-color: #0b8ac0;
-            color: #fff;
+            background-color: $link-color;
+            color: $body-background-color;
         }
     }
 

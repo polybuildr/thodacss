@@ -6,6 +6,7 @@
  }
 
 body {
+    background-color: $body-background-color;
     color: $body-text-color;
     font-family: $body-font-family;
     font-size: $body-font-size;
@@ -29,12 +30,12 @@ h1 {
 }
 
 h2 {
-    color: #222;
+    color: lighten($body-text-color, 7);
     font-size: 2em;
 }
 
 h3 {
-    color: #222;
+    color: lighten($body-text-color, 7);
     font-size: 1.6em;
 }
 
@@ -53,7 +54,7 @@ h6 {
 h4,
 h5,
 h6 {
-    color: #333;
+    color: lighten($body-text-color, 13);
 }
 
 p {
@@ -74,12 +75,12 @@ a:hover {
 }
 
 code {
-    background-color: #eee;
-    border: 1px solid #ccc;
+    background-color: darken($body-background-color, 10);
+    border: 1px solid darken($body-background-color, 20);
     border-radius: 1px;
     padding: .1em .2em;
 }
 
 .muted {
-    color: #666;
+    color: lighten($body-text-color, 35);
 }

@@ -1,10 +1,16 @@
-$body-font-family: 'Noto Sans', sans-serif;
+$body-background-color: #fff;
+$body-font-family: Verdana, sans-serif;
 $body-font-size: 16px;
 $body-text-color: #111;
 
-$headings-font-family: 'Lato', sans-serif;
+$headings-font-family: Trebuchet, sans-serif;
 $headings-font-weight: 400;
 
 $link-color: #0b8ac0;
 
 $mobile-breakpoint: 700px;
+
+// Buttons
+$button-blue-color: $link-color;
+$button-red-color: #e00;
+$button-green-color: #189d12;
