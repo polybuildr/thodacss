@@ -9,10 +9,9 @@
 }
 
 .well {
-    background-color: #eee;
-    border: 1px solid #ccc;
+    background-color: darken($body-background-color, 10);
+    border: 1px solid darken($body-background-color, 20);
     border-radius: 2px;
-    color: #111;
     padding: .7em;
 }
 

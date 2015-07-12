@@ -2,12 +2,13 @@
   box-sizing: border-box; }
 
 body {
+  background-color: #fff;
   color: #111;
-  font-family: 'Noto Sans', sans-serif;
+  font-family: Verdana, sans-serif;
   font-size: 16px; }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Lato', sans-serif;
+  font-family: Trebuchet, sans-serif;
   font-weight: 400;
   margin: .3em 0;
   padding-bottom: .2em; }
@@ -17,11 +18,11 @@ h1 {
   margin: .2em 0; }
 
 h2 {
-  color: #222;
+  color: #232323;
   font-size: 2em; }
 
 h3 {
-  color: #222;
+  color: #232323;
   font-size: 1.6em; }
 
 h4 {
@@ -34,7 +35,7 @@ h6 {
   font-size: 1.2em; }
 
 h4, h5, h6 {
-  color: #333; }
+  color: #323232; }
 
 p {
   line-height: 1.45em;
@@ -53,13 +54,13 @@ a:hover {
           transition: .2s all; }
 
 code {
-  background-color: #eee;
-  border: 1px solid #ccc;
+  background-color: #e6e6e6;
+  border: 1px solid #cccccc;
   border-radius: 1px;
   padding: .1em .2em; }
 
 .muted {
-  color: #666; }
+  color: #6a6a6a; }
 
 .container {
   margin: auto;
@@ -184,7 +185,7 @@ html, body {
 .navbar {
   background-color: #fff;
   background-color: rgba(255, 255, 255, 0.9);
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid #cccccc;
   position: absolute;
   width: 100%;
   z-index: 1000; }
@@ -196,7 +197,7 @@ html, body {
   .navbar.fixed {
     position: fixed; }
   .navbar .navbar-title {
-    border-right: 1px solid #ccc;
+    border-right: 1px solid #cccccc;
     color: #6a6a6a;
     display: block;
     float: left;
@@ -204,8 +205,8 @@ html, body {
     -webkit-transition: .2s all;
             transition: .2s all; }
   .navbar .navbar-title:hover {
-    background-color: #eee;
-    border-right: 1px solid #ccc;
+    background-color: #e6e6e6;
+    border-right: 1px solid #cccccc;
     color: #111;
     -webkit-transition: .2s all;
             transition: .2s all; }
@@ -231,7 +232,7 @@ html, body {
       -webkit-transition: .2s all;
               transition: .2s all; }
   .navbar .menu-toggle-button {
-    border: 1px solid #ccc;
+    border: 1px solid #cccccc;
     display: none;
     float: right;
     line-height: 1.4em;
@@ -248,7 +249,7 @@ html, body {
     width: 100%; }
   .navbar li, .navbar .navbar-title {
     border-right: 0;
-    border-top: 1px solid #ccc;
+    border-top: 1px solid #cccccc;
     float: none;
     text-align: center;
     -webkit-transition: all .2s;
@@ -260,7 +261,7 @@ html, body {
 
 .btn, input[type="submit"], button {
   background-color: #fff;
-  border: 1px solid #aaa;
+  border: 1px solid #a6a6a6;
   border-radius: 1px;
   color: #515151;
   cursor: pointer;
@@ -311,7 +312,7 @@ form.block.full-width input[type="text"], form.block.full-width input[type="pass
 
 input[type="text"], input[type="password"], input[type="email"], textarea, .text-input {
   background-color: #fff;
-  border: 1px solid #ccc;
+  border: 1px solid #cccccc;
   border-radius: 1px;
   color: #2b2b2b;
   display: inline-block;
@@ -322,10 +323,10 @@ input[type="text"], input[type="password"], input[type="email"], textarea, .text
   -webkit-transition: .2s all;
           transition: .2s all; }
   input[type="text"]:hover, input[type="password"]:hover, input[type="email"]:hover, textarea:hover, .text-input:hover {
-    border: 1px solid #999; }
+    border: 1px solid #999999; }
   input[type="text"]:focus, input[type="password"]:focus, input[type="email"]:focus, textarea:focus, .text-input:focus {
-    border: 1px solid #999;
-    box-shadow: 0 0 5px #aaa; }
+    border: 1px solid #999999;
+    box-shadow: 0 0 5px #a6a6a6; }
 
 @media (max-width: 700px) {
   input[type="text"], input[type="password"], input[type="email"], textarea, label, .text-input {
@@ -335,21 +336,21 @@ input[type="text"], input[type="password"], input[type="email"], textarea, .text
 table {
   margin: 1em 0; }
   table.striped tr:nth-child(even) {
-    background-color: #f5f5f5; }
+    background-color: whitesmoke; }
 
 td, th {
-  border: 1px solid #ccc;
+  border: 1px solid #cccccc;
   padding: .5em; }
 
 ul.sidebar {
-  border: 1px solid #ccc;
+  border: 1px solid #cccccc;
   border-radius: 1px;
   color: #2b2b2b;
   list-style: none;
   margin: 0;
   padding: 0; }
   ul.sidebar li.sidebar-title {
-    background-color: #eee;
+    background-color: #e6e6e6;
     display: block;
     font-size: .9em;
     font-weight: 600;
@@ -390,10 +391,9 @@ ul.sidebar {
   clear: both; }
 
 .well {
-  background-color: #eee;
-  border: 1px solid #ccc;
+  background-color: #e6e6e6;
+  border: 1px solid #cccccc;
   border-radius: 2px;
-  color: #111;
   padding: .7em; }
 
 .pull-left {

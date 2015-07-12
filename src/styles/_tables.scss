@@ -3,13 +3,13 @@ table {
 
     &.striped {
         tr:nth-child(even) {
-            background-color: #f5f5f5;
+            background-color: darken($body-background-color, 4);
         }
     }
 }
 
 td,
 th {
-    border: 1px solid #ccc;
+    border: 1px solid darken($body-background-color, 20);
     padding: .5em;
 }

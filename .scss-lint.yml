@@ -1,8 +1,6 @@
 linters:
     BorderZero:
         enabled: false
-    ColorVariable:
-        enabled: false
     QualifyingElement:
         enabled: false
     DuplicateProperty:
