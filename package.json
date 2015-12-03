@@ -1,23 +1,23 @@
 {
-    "name": "thodacss",
-    "version": "0.1.0",
-    "description": "A lightweight, minimal CSS framework.",
-    "repository": {
-        "type": "git",
-        "url": "https://polybuildr@github.com/polybuildr/thodacss.git"
-    },
-    "author": "Vivek Ghaisas",
-    "license": "MIT",
-    "bugs": {
-        "url": "https://github.com/polybuildr/thodacss/issues"
-    },
-    "devDependencies": {
-        "gulp": "^3.9.0",
-        "gulp-autoprefixer": "^3.1.0",
-        "gulp-concat": "^2.6.0",
-        "gulp-sass": "^2.1.0"
-    },
-    "scripts": {
-        "test": "scss-lint src/styles/*.scss"
-    }
+  "name": "thodacss",
+  "version": "0.1.0",
+  "description": "A lightweight, minimal CSS framework.",
+  "repository": {
+    "type": "git",
+    "url": "https://polybuildr@github.com/polybuildr/thodacss.git"
+  },
+  "author": "Vivek Ghaisas",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/polybuildr/thodacss/issues"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-sass": "^2.1.0"
+  },
+  "scripts": {
+    "test": "scss-lint src/styles/*.scss"
+  }
 }
