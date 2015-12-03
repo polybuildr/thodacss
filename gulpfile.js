@@ -17,7 +17,9 @@ gulp.task('js', function() {
 
 gulp.task('build', ['css', 'js']);
 
-gulp.task('default', ['build'], function() {
+gulp.task('watch', ['build'], function() {
     gulp.watch('src/styles/*.{scss,css}', ['css']);
     gulp.watch('src/scripts/*.js', ['js']);
 });
+
+gulp.task('default', ['build']);

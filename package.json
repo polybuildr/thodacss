@@ -19,6 +19,6 @@
   },
   "scripts": {
     "test": "scss-lint src/styles/*.scss",
-    "gulp": "gulp build"
+    "gulp": "gulp"
   }
 }
