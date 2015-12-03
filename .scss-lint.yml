@@ -5,6 +5,8 @@ linters:
         enabled: false
     DuplicateProperty:
         enabled: false
+    PseudoElement:
+        enabled: false
     SelectorDepth:
         max_depth: 4
     NestingDepth:
