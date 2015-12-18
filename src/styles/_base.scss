@@ -63,6 +63,11 @@ p {
     padding: 0;
 }
 
+li {
+    line-height: 1.45em;
+    margin: .1em 0 .2em;
+}
+
 a {
     color: $link-color;
     text-decoration: none;

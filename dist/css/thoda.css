@@ -51,6 +51,10 @@ p {
   margin: .1em 0 1em;
   padding: 0; }
 
+li {
+  line-height: 1.45em;
+  margin: .1em 0 .2em; }
+
 a {
   color: #0b8ac0;
   text-decoration: none;
