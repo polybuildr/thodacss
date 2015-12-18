@@ -239,7 +239,8 @@ body {
     .navbar ul:after {
       clear: both; }
   .navbar li {
-    float: left; }
+    float: left;
+    margin: 0; }
   .navbar a {
     display: block;
     padding: 1em;
