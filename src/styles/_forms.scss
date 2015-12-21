@@ -45,6 +45,14 @@ textarea,
         border: 1px solid darken($body-background-color, 40);
         box-shadow: 0 0 5px  darken($body-background-color, 35);
     }
+
+    &[disabled] {
+        background-color: darken($body-background-color, 7);
+
+        &:hover {
+            border: 1px solid darken($body-background-color, 20);
+        }
+    }
 }
 
 @media (max-width: $mobile-breakpoint) {

@@ -399,6 +399,18 @@ textarea,
   .text-input:focus {
     border: 1px solid #999999;
     box-shadow: 0 0 5px #a6a6a6; }
+  input[type="text"][disabled],
+  input[type="password"][disabled],
+  input[type="email"][disabled],
+  textarea[disabled],
+  .text-input[disabled] {
+    background-color: #ededed; }
+    input[type="text"][disabled]:hover,
+    input[type="password"][disabled]:hover,
+    input[type="email"][disabled]:hover,
+    textarea[disabled]:hover,
+    .text-input[disabled]:hover {
+      border: 1px solid #cccccc; }
 
 @media (max-width: 700px) {
   input[type="text"],
