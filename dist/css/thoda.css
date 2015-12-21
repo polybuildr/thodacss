@@ -524,6 +524,12 @@ ul.sidebar {
 .full-width {
   width: 100%; }
 
+.text-success {
+  color: #008000; }
+
+.text-error {
+  color: #f00; }
+
 @media (min-width: 700px) {
   .desktop-hide {
     display: none; } }

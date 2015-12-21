@@ -57,6 +57,14 @@
     width: 100%;
 }
 
+.text-success {
+    color: $text-success-color;
+}
+
+.text-error {
+    color: $text-error-color;
+}
+
 @media (min-width: $mobile-breakpoint) {
     .desktop-hide {
         display: none;
