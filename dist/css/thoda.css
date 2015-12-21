@@ -220,6 +220,7 @@ body {
     color: #6a6a6a;
     display: block;
     float: left;
+    line-height: 1.4em;
     padding: 1em;
     -webkit-transition: .2s all;
     transition: .2s all; }
@@ -240,6 +241,7 @@ body {
       clear: both; }
   .navbar li {
     float: left;
+    line-height: 1.4em;
     margin: 0; }
   .navbar a {
     display: block;

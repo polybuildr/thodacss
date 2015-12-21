@@ -25,6 +25,7 @@
         color: lighten($body-text-color, 35%);
         display: block;
         float: left;
+        line-height: 1.4em;
         padding: 1em;
         transition: .2s all;
     }
@@ -54,6 +55,7 @@
 
     li {
         float: left;
+        line-height: 1.4em;
         margin: 0;
     }
 
