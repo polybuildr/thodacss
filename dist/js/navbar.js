@@ -1,15 +1,2 @@
-function toggleNav() {
-    var navbar = document.querySelector('.navbar');
-    var classList = navbar.className.split(/\s+/);
-    var index = classList.indexOf('collapsed');
-    if (index == -1) {
-        classList.push('collapsed');
-    }
-    else {
-        classList.splice(index, 1);
-    }
-    navbar.className = classList.join(' ');
-}
-
-document.querySelector('.menu-toggle-button').onclick = toggleNav;
-toggleNav();
+/*! ThodaCSS v0.1.0 | MIT License | https://github.com/polybuildr/thodacss */
+function toggleNav(){var e=document.querySelector(".navbar"),l=e.className.split(/\s+/),o=l.indexOf("collapsed");-1==o?l.push("collapsed"):l.splice(o,1),e.className=l.join(" ")}document.querySelector(".menu-toggle-button").onclick=toggleNav,toggleNav();

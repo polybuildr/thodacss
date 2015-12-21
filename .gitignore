@@ -1,5 +1,7 @@
 #editor generated files
 *.swp
 
+/build/
+
 #node
 /node_modules/
