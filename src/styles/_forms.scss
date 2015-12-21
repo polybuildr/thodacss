@@ -1,22 +1,25 @@
-form.block {
-    input[type="text"],
-    input[type="password"],
-    input[type="email"],
-    textarea,
-    label,
-    .text-input {
-        display: block;
-        margin: .4em 0;
-    }
+form {
+    margin: 1em 0;
 
-    &.full-width {
+    &.block {
         input[type="text"],
         input[type="password"],
         input[type="email"],
         textarea,
-        label,
         .text-input {
-            width: 100%;
+            display: block;
+            margin: .4em 0;
+        }
+
+        &.full-width {
+            input[type="text"],
+            input[type="password"],
+            input[type="email"],
+            textarea,
+            label,
+            .text-input {
+                width: 100%;
+            }
         }
     }
 }
@@ -32,7 +35,6 @@ textarea,
     color: lighten($body-text-color, 10%);
     display: inline-block;
     height: auto;
-    margin: 0 .5em;
     outline: 0;
     padding: .4em .6em;
     transition: .2s all;
